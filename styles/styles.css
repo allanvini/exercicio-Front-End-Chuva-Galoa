@@ -124,3 +124,7 @@ li {
     margin: auto;
     margin-left: 25vw;
 }
+
+.card .card-content p{
+    margin-bottom: 15px;
+}
