@@ -200,11 +200,13 @@ li {
     margin-top: 10px;
 }
 
-.subject-input{
+#topic-subject{
     background: #FFFFFF;
     border: 1px solid #CCCCCC;
     box-sizing: border-box;
     border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
 }
 
 .form-fields-title{
