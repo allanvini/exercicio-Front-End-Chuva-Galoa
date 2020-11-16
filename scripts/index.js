@@ -35,7 +35,8 @@ function postNewTopic(){
             subject: subject.value,
             author: 'Usuário padrão :)',
             content: content.value,
-            likes: 1
+            likes: 1,
+            answers: 1
         }
     )
 
@@ -55,14 +56,14 @@ function renderTopics(container, data){
     data.forEach(element =>{
         comments.push(
             `
-            <div style="margin: 10px 10px 0px 0px; box-shadow: 0px 5px 25px -5px rgba(0,0,0, 0.4); border-radius: 5px; padding: 10px;">
-                <p style="color: #e29200; font-weight: bold;""> ${element.subject}</p>
-                <p style="font-size: 10px; font-weight: normal; margin-bottom: 10px;">${element.author}</p>
-                <p>${element.content}</p>
+            <div class="comment-card">
+                <p class="comment-card-subject"> ${element.subject}</p>
+                <p class="comment-card-author">${element.author}</p>
+                <p class="comment-card-content">${element.content}</p>
                 <div style="display: flex; flex-direction: row;">
                     <a style="color: rgb(216, 140, 0); margin-top: 5px;"><i class="material-icons">more_vert</i></a>
                     <a class="waves-effect waves-light btn-small quote-button"><i class="material-icons center">thumb_up</i></a>
-                    <p style="margin-top: 5px; margin-left: 5px;">Likes: ${element.likes}</p>
+                    <p style="font-family: Segoe UI; font-weight: 350; font-size: 14px; line-height: 19px; margin-top: 5px; margin-left: 5px;">${element.likes} Like  ${element.answers} resposta</p>
                 </div>
             </div>
             `
