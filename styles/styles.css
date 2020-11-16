@@ -275,7 +275,22 @@ li {
     margin-left: 230px;
 }
 
+.footer-direction{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 993px){
+
+    .galoa-logo{
+        margin: auto;
+    }
+
+    .footer-direction{
+        flex-direction: column;
+        justify-items: center;
+    }
 
     .footer-divider{
         margin-left: 0;
